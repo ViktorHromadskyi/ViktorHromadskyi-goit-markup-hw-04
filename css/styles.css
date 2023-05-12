@@ -144,7 +144,8 @@ img {
   padding-top: 24px;
   padding-bottom: 24px;
   border-bottom: 1px solid#e7e9fc;
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 /*основний блок*/
@@ -228,6 +229,11 @@ img {
 
 .goals-list-item {
   flex-basis: calc((100% - 72px) / 4);
+}
+
+.icon-goals {
+  width: 64px;
+  height: 64px;
 }
 
 .icon-goals-list {
@@ -349,6 +355,8 @@ img {
 
 .social-network-icon {
   fill: #f4f4fd;
+  widht: 16px;
+  height: 16px;
 }
 
 /* Наші клієнти */
@@ -395,6 +403,8 @@ img {
 
 .icon-customers-list {
   fill: currentColor;
+  widht: 104px;
+  height: 56px;
 }
 /* Футер */
 
@@ -466,6 +476,8 @@ img {
 
 .footer-social-network-icon {
   fill: #f4f4fd;
+  width: 24px;
+  height: 24px;
 }
 /* portfolio */
 
