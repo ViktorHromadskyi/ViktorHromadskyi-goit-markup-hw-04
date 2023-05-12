@@ -151,6 +151,12 @@ img {
 /* сторінка герой */
 
 .hero-section {
+  background-size: cover;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/hero/people-office.jpg");
   background-color: #2e2f42;
   text-align: center;
   padding-top: 188px;
@@ -217,6 +223,18 @@ img {
 .goals-list-item {
   flex-basis: calc((100% - 72px) / 4);
 }
+
+.icon-goals-list {
+  width: 264px;
+  height: 112px;
+  border-radius: 4%;
+  background-color: #f4f4fd;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* приклади робіт */
 
 .work-examples-section {
@@ -258,6 +276,7 @@ img {
 .our-team-item {
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .our-team-name {
@@ -279,6 +298,7 @@ img {
   color: #434455;
   background-color: #ffffff;
   text-align: center;
+  margin-bottom: 8px;
 }
 
 .our-team-list {
@@ -291,6 +311,60 @@ img {
   padding-bottom: 32px;
   padding-left: 16px;
   padding-right: 16px;
+}
+
+.social-network-list {
+  display: flex;
+  justify-content: center;
+  column-gap: 24px;
+}
+
+.social-network-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+}
+
+.social-network-link {
+  display: flex;
+  justify-content: center;
+  column-gap: 24px;
+}
+
+/* Наші клієнти */
+
+.customers-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
+  margin-bottom: 72px;
+}
+
+.customers-list-logo {
+  display: flex;
+  column-gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+
+.customers-list {
+  display: flex;
+  width: 168px;
+  height: 88px;
+  align-items: center;
+  justify-content: center;
+  border-style: solid;
+  border-radius: 4%;
+  border-width: 1px;
+  border-color: #8e8f99;
 }
 
 /* Футер */
@@ -308,7 +382,6 @@ img {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
-  display: block;
 }
 
 .logo-web-footer {
@@ -317,6 +390,28 @@ img {
 
 .footer-logo-link {
   margin-bottom: 16px;
+}
+
+.social-media-title {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.11;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+.social-network-list-footer {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+}
+
+.footer-item {
+  display: flex;
+}
+
+.decrption-box {
+  margin-right: 120px;
 }
 /* portfolio */
 
