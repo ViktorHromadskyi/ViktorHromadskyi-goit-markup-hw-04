@@ -144,6 +144,7 @@ img {
   padding-top: 24px;
   padding-bottom: 24px;
   border-bottom: 1px solid#e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 /*основний блок*/
@@ -151,6 +152,8 @@ img {
 /* сторінка герой */
 
 .hero-section {
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -227,7 +230,7 @@ img {
 .icon-goals-list {
   width: 264px;
   height: 112px;
-  border-radius: 4%;
+  border-radius: 4px;
   background-color: #f4f4fd;
   margin-bottom: 8px;
   display: flex;
@@ -274,9 +277,10 @@ img {
   margin-bottom: 72px;
 }
 .our-team-item {
+  padding: 32px 0;
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .our-team-name {
@@ -316,7 +320,7 @@ img {
 .social-network-list {
   display: flex;
   justify-content: center;
-  column-gap: 24px;
+  gap: 24px;
 }
 
 .social-network-item {
@@ -340,7 +344,7 @@ img {
 .customers-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11;
+  line-height: 1.1;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
@@ -350,23 +354,36 @@ img {
 
 .customers-list-logo {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
   align-items: center;
   justify-content: center;
 }
 
 .customers-list {
-  display: flex;
   width: 168px;
   height: 88px;
-  align-items: center;
-  justify-content: center;
-  border-style: solid;
-  border-radius: 4%;
-  border-width: 1px;
-  border-color: #8e8f99;
 }
 
+.customers-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8e8f99;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+}
+
+.customers-link:hover,
+.customers-link:focus {
+  border-color: #404bbf;
+  color: #404bbf;
+}
+
+.icon-customers-list {
+  fill: currentColor;
+}
 /* Футер */
 
 .footer {
@@ -392,26 +409,51 @@ img {
   margin-bottom: 16px;
 }
 
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-description-container {
+  margin-right: 120px;
+}
+
 .social-media-title {
-  display: inline-block;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.11;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
 }
+
 .social-network-list-footer {
   display: flex;
-  align-items: center;
-  column-gap: 16px;
+  gap: 16px;
 }
 
-.footer-item {
+.social-network-item {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-social-network-link {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
 }
 
-.decrption-box {
-  margin-right: 120px;
+.footer-social-network-link:hover,
+.footer-social-network-link:focus {
+  background-color: #31d0aa;
+}
+
+.footer-social-network-icon {
+  fill: #f4f4fd;
 }
 /* portfolio */
 
@@ -479,6 +521,14 @@ img {
   width: calc((100% - 48px) / 3);
 }
 
+.project-link {
+  display: block;
+}
+
+.project-link:hover,
+.project-link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
 .project-container {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
